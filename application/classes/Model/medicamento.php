@@ -5,12 +5,12 @@ class Model_Medicamento extends ORM {
         return array(
             'nombre_distintivo' => array(
                 array('not_empty'),
-                array('min_length', array(':value'), 4),
+                array('min_length', array(':value', 4)),
                 array('max_length', array(':value', 35)),
             ),
             'nombre_generico' => array(
                 array('not_empty'),
-                array('min_length', array(':value'), 4),
+                array('min_length', array(':value', 4)),
                 array('max_length', array(':value', 50)),
             ),
             'presentacion' => array(

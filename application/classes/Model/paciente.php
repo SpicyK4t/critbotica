@@ -5,7 +5,7 @@ class Model_Paciente extends ORM {
         return Array(
             'nombre_paciente' => array(
                 array('not_empty'),
-                array('min_length', array(':value'), 4),
+                array('min_length', array(':value', 4)),
                 array('max_length', array(':value', 36)),
             ),
             'apellido_paciente' => array(

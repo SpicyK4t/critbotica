@@ -5,7 +5,7 @@ class Model_User extends Model_Auth_User {
         return array(
             'email' => array(
                 array('not_empty'), 
-                array('min_length', array(':value'), 4),
+                array('min_length', array(':value', 4)),
                 array('max_length', array(':value', 254)),                
                 array('email'),
             ),
