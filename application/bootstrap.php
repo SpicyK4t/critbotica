@@ -103,7 +103,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  expose      set the X-Powered-By header                        FALSE
  */
 Kohana::init(array(
-	'base_url'   => '/critbotica/',
+	'base_url'   => 'http://127.0.0.1/public_html/critbotica/',
 ));
 
 /**
@@ -138,7 +138,8 @@ Kohana::modules(array(
  * If you have not defined a cookie salt in your Cookie class then
  * uncomment the line below and define a preferrably long salt.
  */
-// Cookie::$salt = NULL;
+
+Cookie::$salt = "CritManejodeBotica";
 
 /**
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
