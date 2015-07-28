@@ -20,7 +20,7 @@ return array
 			 */
 			'hostname'   => 'localhost',
 			'database'   => 'crit',
-			'username'   => FALSE,
+			'username'   => 'root',
 			'password'   => FALSE,
 			'persistent' => FALSE,
 		),
