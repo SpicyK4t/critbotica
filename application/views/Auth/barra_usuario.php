@@ -1,0 +1,1 @@
+<?php echo HTML::anchor('/Auth/logout', 'Cerrar Sesión');?>

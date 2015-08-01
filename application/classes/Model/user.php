@@ -33,6 +33,5 @@ class Model_User extends Model_Auth_User {
     }
     public function username_available($username) {        
         return !(ORM::factory('user', array('username' => $username))->loaded());        
-    }
-    
+    }    
 }

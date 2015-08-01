@@ -2,7 +2,7 @@
 
 return array(
 
-	'driver'       => 'File',
+	'driver'       => 'ORM',
 	'hash_method'  => 'sha256',
 	'hash_key'     => 'UnaLLaveHashDel2015',
 	'lifetime'     => 1209600,
