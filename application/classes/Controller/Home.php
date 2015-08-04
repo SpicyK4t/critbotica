@@ -5,8 +5,7 @@ class Controller_Home extends Controller_Template {
     public $template = 'base';
     
     public function action_index() 
-    {
-        $user = Auth::instance()->get_user()->habilitado;
+    {        
         if(Auth::instance()->logged_in()) 
         {
             if(Auth::instance()->get_user()->habilitado) 

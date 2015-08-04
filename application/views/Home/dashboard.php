@@ -1,10 +1,10 @@
 <?php 
     if(Auth::instance()->logged_in('admin')) 
     {
-        echo "Usuarios";
+        echo HTML::anchor('/user/', 'Usuarios');
     }
 ?>
 <h5>Medicamentos</h5>
 <h5>Entradas</h5>
 <h5>Salidas</h5>
-<h5>Reportes</h5>
+<h5>Reportes</h5>  

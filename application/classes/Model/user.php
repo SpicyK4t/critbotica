@@ -16,6 +16,9 @@ class Model_User extends Model_Auth_User {
                 array('regex', array(':value', '/^[-\pL\pN_.]++$/uD')),
                 array(array($this, 'username_available')),
             ),
+            'password' => array(
+                array('not_empty'),
+            ),
             'nombre' => array(                
                 array('not_empty'), 
                 array('min_length', array(':value', 4)),
