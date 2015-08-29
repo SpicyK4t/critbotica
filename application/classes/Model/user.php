@@ -4,13 +4,13 @@ class Model_User extends Model_Auth_User {
     public function rules() {
         return array(
             'email' => array(
-                array('not_empty'), 
+                array('not_empty'),
                 array('min_length', array(':value', 4)),
-                array('max_length', array(':value', 254)),                
+                array('max_length', array(':value', 254)),
                 array('email'),
-            ),            
+            ),
             'username' => array(
-                array('not_empty'), 
+                array('not_empty'),
                 array('min_length', array(':value', 4)),
                 array('max_length', array(':value', 32)),
                 array('regex', array(':value', '/^[-\pL\pN_.]++$/uD')),
@@ -19,22 +19,22 @@ class Model_User extends Model_Auth_User {
             'password' => array(
                 array('not_empty'),
             ),
-            'nombre' => array(                
-                array('not_empty'), 
+            'nombre' => array(
+                array('not_empty'),
                 array('min_length', array(':value', 4)),
                 array('max_length', array(':value', 45)),
             ),
             'apellido' => array(
-                array('not_empty'), 
+                array('not_empty'),
                 array('min_length', array(':value', 4)),
                 array('max_length', array(':value', 70)),
             ),
-            'habilitado' => array(                
+            'habilitado' => array(
                 array('digit'),
             )
         );
     }
-    public function username_available($username) {        
-        return !(ORM::factory('user', array('username' => $username))->loaded());        
-    }    
+    public function username_available($username) {
+        return !(ORM::factory('user', array('username' => $username))->loaded());
+    }
 }

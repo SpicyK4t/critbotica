@@ -1,4 +1,4 @@
-<?php define('SYSPATH') or die('No direct script access allowed.');
+<?php defined('SYSPATH') or die('No direct script access allowed.');
 
 class Model_Paciente extends ORM {
     public function rules() {

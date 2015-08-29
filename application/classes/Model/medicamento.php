@@ -1,4 +1,4 @@
-<?php define('SYSPATH') or die('No direct script access allowed.');
+<?php defined('SYSPATH') or die('No direct script access allowed.');
 
 class Model_Medicamento extends ORM {
     public function rules() {
@@ -21,18 +21,18 @@ class Model_Medicamento extends ORM {
             'stock_minimo' => array(
                 array('not_empty'),
                 array('digit'),
-            ), 
+            ),
             'grupo' => array(
                 array('not_empty'),
                 array('digit'),
             ),
             'habilitado' => array(
-                array('not_empty'), 
+                array('not_empty'),
                 array('digit'),
             ),
         );
     }
-    
+
     protected $_belongs_to = array(
         'user' => array(),
     );

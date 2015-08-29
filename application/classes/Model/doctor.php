@@ -1,4 +1,4 @@
-<?php define('SYSPATH') or die('No direct script access allowed.');
+<?php defined('SYSPATH') or die('No direct script access allowed.');
 
 class Model_Doctor extends ORM {
     public function rules() {
@@ -10,7 +10,7 @@ class Model_Doctor extends ORM {
             ),
             'apellido_doctor' => array(
                array('not_empty'),
-               array('min_length', array(':value'), 4),
+               array('min_length', array(':value', 4)),
                array('max_length', array(':value', 36)),
             ),
         );

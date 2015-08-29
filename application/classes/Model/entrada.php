@@ -1,4 +1,4 @@
-<?php define('SYSPATH') or die('No direct script access allowed.');
+<?php defined('SYSPATH') or die('No direct script access allowed.');
 
 class Model_Entrada extends ORM {
     public function rules() {
@@ -29,7 +29,7 @@ class Model_Entrada extends ORM {
             ),
         );
     }
-    
+
     protected $_belongs_to = array(
         'medicamento' => array(),
         'user' => array(),

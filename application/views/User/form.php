@@ -17,5 +17,5 @@
     <?php echo Form::label('apellido', 'Apellido'); ?>
         <?php echo Form::input('apellido', $usuario->apellido);?>
         <p class="error"> <?php echo Arr::get($errors, 'apellido'); ?> </p>
-    <?php echo Form::submit(NULL, 'Guardar') ?>
+    <?php echo Form::submit(NULL, 'Guardar'); ?>
 <?php echo Form::close(); ?>
