@@ -13,9 +13,9 @@
             </tr>
         </thead>
         <tbody>
-            <?php for($pacientes as $paciente) { ?>
+            <?php foreach($pacientes as $paciente) { ?>
                 <tr>
-                    <td> <?php echo $pacuente->carnet; ?> </td>
+                    <td> <?php echo $paciente->carnet; ?> </td>
                     <td> <?php echo $paciente->nombre_paciente; ?> </td>
                     <td> <?php echo $paciente->apellido_paciente; ?> </td>
                     <td> <?php echo HTML::anchor('/paciente/edit/'.$paciente->id, 'Editar'); ?> </td>

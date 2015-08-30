@@ -28,7 +28,7 @@ class Controller_Paciente extends Controller_Template {
             $view = View::factory('Paciente/form')
                 ->bind('errors', $errors);
 
-            if(http_request::POST == $this->request->method)
+            if(http_request::POST == $this->request->method())
             {
                 $paciente = ORM::factory('paciente')->values($_POST,
                   array('nombre_paciente', 'apellido_paciente', 'carnet',
@@ -50,9 +50,9 @@ class Controller_Paciente extends Controller_Template {
 
     public function action_edit()
     {
-        if(Auth::instace->get_user()->habilitado)
+        if(Auth::instance()->get_user()->habilitado)
         {
-            $id = this->request->param('id');
+            $id = $this->request->param('id');
             $paciente = ORM::factory('paciente', $id);
 
             $view = View::factory('Paciente/form')
