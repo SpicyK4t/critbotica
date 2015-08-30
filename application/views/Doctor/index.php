@@ -18,7 +18,8 @@
                     <tr>
                         <td> <?php echo $doctor->nombre_doctor; ?> </td>
                         <td> <?php echo $doctor->apellido_doctor; ?> </td>
-                        <td> <?php echo HTML::anchor('/doctor/edit/'.$doctor->id, 'Editar'); ?>
+                        <td>
+                             <?php echo HTML::anchor('/doctor/edit/'.$doctor->id, 'Editar'); ?>
                         </td>
                     </tr>
                 <?php

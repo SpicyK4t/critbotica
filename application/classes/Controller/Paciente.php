@@ -30,13 +30,53 @@ class Controller_Paciente extends Controller_Template {
 
             if(http_request::POST == $this->request->method)
             {
-                $paciente = ORM::factory('paciente')->values($_POST, array());
+                $paciente = ORM::factory('paciente')->values($_POST,
+                  array('nombre_paciente', 'apellido_paciente', 'carnet',
+                  'nombre_tutor', 'apellido_tutor'));
+                try
+                {
+                    $paciente->save();
+                    Http::redirect('/paciente/');
+                }
+                catch (ORM_Validation_Exception $e) {
+                    $errors = $e->errors('Models');
+                }
             }
+            $view->paciente = $paciente;
+            $this->template->contenido = $view;
+            $this->template->menu = "";
         }
     }
 
     public function action_edit()
     {
+        if(Auth::instace->get_user()->habilitado)
+        {
+            $id = this->request->param('id');
+            $paciente = ORM::factory('paciente', $id);
 
+            $view = View::factory('Paciente/form')
+              ->bind('errors', $errors);
+
+            if(http_request::POST == $this->request->method())
+            {
+                $paciente->values($_POST,
+                  array('nombre_paciente', 'apellido_paciente', 'carnet',
+                  'nombre_tutor', 'apellido_tutor'));
+
+                try
+                {
+                    $paciente->save();
+                    Http::redirect('/paciente/');
+                }
+                catch(ORM_Validation_Exception $e)
+                {
+                    $errors = $e->errors('Models');
+                }
+            }
+            $view->paciente = $paciente;
+            $this->template->contenido = $view;
+            $this->template->menu = "";
+        }
     }
 }
