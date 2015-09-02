@@ -46,6 +46,8 @@ class Controller_Paciente extends Controller_Template {
             $this->template->contenido = $view;
             $this->template->menu = "";
         }
+        else
+            HTTP::redirect('/Auth/login/');
     }
 
     public function action_edit()
@@ -78,5 +80,7 @@ class Controller_Paciente extends Controller_Template {
             $this->template->contenido = $view;
             $this->template->menu = "";
         }
+        else
+            HTTP::redirect('/Auth/login/');
     }
 }
