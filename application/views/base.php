@@ -12,5 +12,9 @@
 
         <?php echo HTML::script('media/js/jquery-2.1.4.min.js');  ?>
         <?php echo HTML::script('media/js/materialize.min.js'); ?>
+        <?php
+            if(isset($scripts))
+                  echo $scripts;
+        ?>
     </body>
 </html>
