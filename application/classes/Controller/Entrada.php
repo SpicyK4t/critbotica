@@ -1,0 +1,105 @@
+<?php defined('SYSPATH') or die('Nor direct script access.');
+
+class Controller_Entrada extends Controller_Template {
+   public $template = 'base';
+
+   public function action_index()
+   {
+      if(Auth::instance()->get_user()->habilitado)
+      {
+         $entradas = ORM::factory('entrada')->find_all();
+
+         $view = View::factory('Entrada/index');
+         $view->entradas = $entradas;
+
+         $this->template->contenido = $view;
+         $this->template->menu = "";
+      }
+      else
+         HTTP::redirect('/Auth/login/');
+   }
+
+   public function action_new()
+   {
+      if(Auth::instance()->get_user()->habilitado)
+      {
+         $entrada = ORM::factory('entrada');
+
+         $view = View::factory('Entrada/form')
+            ->bind('errors', $errors);
+
+         if(http_request::POST == $this->request->method())
+         {
+            $entrada = ORM::factory('entrada')->values($_POST,
+                  array('cantidad', 'caducidad', 'lote', 'no_registro',
+                        'fecha_entrada', 'observaciones'));
+
+            $entrada->medicamento_id = $this->request>post('medicamento');
+            $entrada->user = Auth::instance()->get_user();
+
+            try
+            {
+               $entrada->save();
+               HTTP::redirect("/entrada/");
+            }
+            catch(ORM_Validation_Exception $e)
+            {
+               $errors = $e->errors('Models');
+            }
+         }
+
+         $medicamentos = ORM::factory('medicamento')
+            ->where('habilitado', '=', 1)->find_all()->as_array('id', 'nombre_distintivo');
+
+         $view->entrada =$entrada;
+         $view->medicamentos = $medicamentos;
+         $this->template->contenido = $view;
+         $this->template->scripts = View::factory('Medicamento/scripts');
+         $this->template->menu = "";
+      }
+      else
+         HTTP::redirect('/Auth/login/');
+   }
+
+   public function action_edit()
+   {
+      if(Auth::instance()->get_user()->habilitado)
+      {
+         $id = $this->request->param('id');
+         $entrada = ORM::factory('entrada', $id);
+
+         $view = View::factory('Entrada/form')
+            ->bind('errors', $errors);
+
+         if(http_request::POST == $this->request->method())
+         {
+            $entrada->values($_POST, array('cantidad', 'caducidad', 'lote', 'no_registro',
+                  'fecha_entrada', 'observaciones'));
+
+            $entrada->medicamento_id = $this->request>post('medicamento');
+            $entrada->user = Auth::instance()->get_user();
+
+            try
+            {
+               $entrada->save();
+               HTTP::redirect("/entrada/");
+            }
+            catch (ORM_Validation_Exception $e)
+            {
+               $errors = $e->errors('Models');
+            }
+         }
+
+         $medicamentos = ORM::factory('medicamento')
+            ->where('habilitado', '=', 1)->find_all()->as_array('id', 'nombre_distintivo');
+
+         $view->entrada =$entrada;
+         $view->medicamentos = $medicamentos;
+         $this->template->contenido = $view;
+         $this->template->scripts = View::factory('Medicamento/scripts');
+         $this->template->menu = "";
+      }
+      else
+         HTTP::redirect('/Auth/login/');
+   }
+}

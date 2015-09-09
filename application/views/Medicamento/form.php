@@ -34,8 +34,7 @@
 
    <div class="input-field">
       <?php echo Form::select('grupo', $grupos, $medicamento->grupo); ?>
-      <label>Grupo</label>
-      <?php Form::label('grupo', 'Grupo'); ?>
+      <?php echo Form::label('grupo', 'Grupo'); ?>            
       <p class="error"> <?php echo Arr::get($errors, 'grupo'); ?> </p>
    </div>
    <?php echo Form::submit(NULL, 'Guardar'); ?>

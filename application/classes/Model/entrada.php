@@ -13,12 +13,12 @@ class Model_Entrada extends ORM {
             ),
             'lote' => array(
                 array('not_empty'),
-                array('min_length', array(':value', 6),
+                array('min_length', array(':value', 6)),
                 array('max_length', array(':value', 20)),
             ),
             'no_registro' => array(
                 array('not_empty'),
-                array('min_length', array(':value', 6),
+                array('min_length', array(':value', 6)),
                 array('max_length', array(':value', 20)),
             ),
             'fecha_entrada' => array(
