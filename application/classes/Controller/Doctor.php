@@ -7,7 +7,7 @@ class Controller_Doctor extends Controller_Template {
     {
         if(Auth::instance()->get_user()->habilitado)
         {
-            $doctores = ORM::factory('doctor')->find_all();
+            $doctores = ORM::factory('Doctor')->find_all();
 
             $view = View::factory('Doctor/index');
             $view->doctores = $doctores;
@@ -23,14 +23,14 @@ class Controller_Doctor extends Controller_Template {
     {
         if(Auth::instance()->get_user()->habilitado)
         {
-            $doctor = ORM::factory('doctor');
+            $doctor = ORM::factory('Doctor');
 
             $view = View::factory('Doctor/form')
                 ->bind('errors', $errors);
 
             if(http_request::POST == $this->request->method())
             {
-                $doctor = ORM::factory('doctor')->values($_POST, array('nombre_doctor', 'apellido_doctor'));
+                $doctor = ORM::factory('Doctor')->values($_POST, array('nombre_doctor', 'apellido_doctor'));
                 try
                 {
                     $doctor->save();
@@ -55,7 +55,7 @@ class Controller_Doctor extends Controller_Template {
         if(Auth::instance()->get_user()->habilitado)
         {
             $id = $this->request->param('id');
-            $doctor = ORM::factory('doctor', $id);
+            $doctor = ORM::factory('Doctor', $id);
 
             $view = View::factory('Doctor/form')
                 ->bind('errors', $errors);

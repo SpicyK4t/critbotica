@@ -7,7 +7,7 @@ class Controller_Entrada extends Controller_Template {
    {
       if(Auth::instance()->get_user()->habilitado)
       {
-         $entradas = ORM::factory('entrada')->find_all();
+         $entradas = ORM::factory('Entrada')->find_all();
 
          $view = View::factory('Entrada/index');
          $view->entradas = $entradas;
@@ -23,7 +23,7 @@ class Controller_Entrada extends Controller_Template {
    {
       if(Auth::instance()->get_user()->habilitado)
       {
-         $entrada = ORM::factory('entrada');
+         $entrada = ORM::factory('Entrada');
 
          $view = View::factory('Entrada/form')
             ->bind('errors', $errors);
@@ -34,7 +34,7 @@ class Controller_Entrada extends Controller_Template {
                   array('cantidad', 'caducidad', 'lote', 'no_registro',
                         'fecha_entrada', 'observaciones'));
 
-            $entrada->medicamento_id = $this->request>post('medicamento');
+            $entrada->medicamento_id = $this->request->post('medicamento');
             $entrada->user = Auth::instance()->get_user();
 
             try
@@ -48,7 +48,7 @@ class Controller_Entrada extends Controller_Template {
             }
          }
 
-         $medicamentos = ORM::factory('medicamento')
+         $medicamentos = ORM::factory('Medicamento')
             ->where('habilitado', '=', 1)->find_all()->as_array('id', 'nombre_distintivo');
 
          $view->entrada =$entrada;
@@ -66,7 +66,7 @@ class Controller_Entrada extends Controller_Template {
       if(Auth::instance()->get_user()->habilitado)
       {
          $id = $this->request->param('id');
-         $entrada = ORM::factory('entrada', $id);
+         $entrada = ORM::factory('Entrada', $id);
 
          $view = View::factory('Entrada/form')
             ->bind('errors', $errors);
@@ -76,7 +76,7 @@ class Controller_Entrada extends Controller_Template {
             $entrada->values($_POST, array('cantidad', 'caducidad', 'lote', 'no_registro',
                   'fecha_entrada', 'observaciones'));
 
-            $entrada->medicamento_id = $this->request>post('medicamento');
+            $entrada->medicamento_id = $this->request->post('medicamento');
             $entrada->user = Auth::instance()->get_user();
 
             try
@@ -90,7 +90,7 @@ class Controller_Entrada extends Controller_Template {
             }
          }
 
-         $medicamentos = ORM::factory('medicamento')
+         $medicamentos = ORM::factory('Medicamento')
             ->where('habilitado', '=', 1)->find_all()->as_array('id', 'nombre_distintivo');
 
          $view->entrada =$entrada;

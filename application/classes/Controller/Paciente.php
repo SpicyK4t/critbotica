@@ -7,7 +7,7 @@ class Controller_Paciente extends Controller_Template {
     {
         if(Auth::instance()->get_user()->habilitado)
         {
-            $pacientes = ORM::factory('paciente')->find_all();
+            $pacientes = ORM::factory('Paciente')->find_all();
 
             $view = View::factory('Paciente/index');
             $view->pacientes = $pacientes;
@@ -23,14 +23,14 @@ class Controller_Paciente extends Controller_Template {
     {
         if(Auth::instance()->get_user()->habilitado)
         {
-            $paciente = ORM::factory('paciente');
+            $paciente = ORM::factory('Paciente');
 
             $view = View::factory('Paciente/form')
                 ->bind('errors', $errors);
 
             if(http_request::POST == $this->request->method())
             {
-                $paciente = ORM::factory('paciente')->values($_POST,
+                $paciente = ORM::factory('Paciente')->values($_POST,
                   array('nombre_paciente', 'apellido_paciente', 'carnet',
                   'nombre_tutor', 'apellido_tutor'));
                 try
@@ -55,7 +55,7 @@ class Controller_Paciente extends Controller_Template {
         if(Auth::instance()->get_user()->habilitado)
         {
             $id = $this->request->param('id');
-            $paciente = ORM::factory('paciente', $id);
+            $paciente = ORM::factory('Paciente', $id);
 
             $view = View::factory('Paciente/form')
               ->bind('errors', $errors);

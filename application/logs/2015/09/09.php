@@ -170,3 +170,48 @@
 2015-09-09 16:45:41 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined function post() ~ APPPATH/classes/Controller/Entrada.php [ 37 ] in file:line
 2015-09-09 16:45:41 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
 #1 {main} in file:line
+2015-09-09 21:23:42 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined function post() ~ APPPATH/classes/Controller/Entrada.php [ 37 ] in file:line
+2015-09-09 21:23:42 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-09 21:24:11 --- EMERGENCY: ErrorException [ 1 ]: Class 'Model_Medicamento' not found ~ MODPATH/orm/classes/Kohana/ORM.php [ 46 ] in file:line
+2015-09-09 21:24:11 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-09 21:26:51 --- EMERGENCY: ErrorException [ 1 ]: Class 'Model_entrada' not found ~ MODPATH/orm/classes/Kohana/ORM.php [ 46 ] in file:line
+2015-09-09 21:26:51 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-09 21:27:00 --- EMERGENCY: ErrorException [ 1 ]: Class 'Model_entrada' not found ~ MODPATH/orm/classes/Kohana/ORM.php [ 46 ] in file:line
+2015-09-09 21:27:00 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-09 21:27:05 --- EMERGENCY: ErrorException [ 1 ]: Class 'Model_entrada' not found ~ MODPATH/orm/classes/Kohana/ORM.php [ 46 ] in file:line
+2015-09-09 21:27:05 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-09 21:27:13 --- EMERGENCY: ErrorException [ 1 ]: Class 'Model_entrada' not found ~ MODPATH/orm/classes/Kohana/ORM.php [ 46 ] in file:line
+2015-09-09 21:27:13 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-09 21:27:14 --- EMERGENCY: ErrorException [ 1 ]: Class 'Model_entrada' not found ~ MODPATH/orm/classes/Kohana/ORM.php [ 46 ] in file:line
+2015-09-09 21:27:14 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-09 21:27:21 --- EMERGENCY: ErrorException [ 1 ]: Class 'Model_entrada' not found ~ MODPATH/orm/classes/Kohana/ORM.php [ 46 ] in file:line
+2015-09-09 21:27:21 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-09 21:27:34 --- EMERGENCY: ErrorException [ 1 ]: Class 'Model_medicamento' not found ~ MODPATH/orm/classes/Kohana/ORM.php [ 46 ] in file:line
+2015-09-09 21:27:34 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-09 21:27:35 --- EMERGENCY: ErrorException [ 1 ]: Class 'Model_medicamento' not found ~ MODPATH/orm/classes/Kohana/ORM.php [ 46 ] in file:line
+2015-09-09 21:27:35 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-09 21:28:22 --- EMERGENCY: ErrorException [ 1 ]: Class 'Model_doctor' not found ~ MODPATH/orm/classes/Kohana/ORM.php [ 46 ] in file:line
+2015-09-09 21:28:22 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-09 21:32:03 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: nuevo_usuario ~ APPPATH/classes/Controller/User.php [ 43 ] in /home/guillermo/public_html/critbotica/application/classes/Controller/User.php:43
+2015-09-09 21:32:03 --- DEBUG: #0 /home/guillermo/public_html/critbotica/application/classes/Controller/User.php(43): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/guillermo...', 43, Array)
+#1 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller.php(84): Controller_User->action_new()
+#2 [internal function]: Kohana_Controller->execute()
+#3 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_User))
+#4 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#6 /home/guillermo/public_html/critbotica/index.php(118): Kohana_Request->execute()
+#7 {main} in /home/guillermo/public_html/critbotica/application/classes/Controller/User.php:43
+2015-09-09 21:33:54 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined function post() ~ APPPATH/classes/Controller/Entrada.php [ 79 ] in file:line
+2015-09-09 21:33:54 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line

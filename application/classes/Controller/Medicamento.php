@@ -7,7 +7,7 @@
       {
          if(Auth::instance()->get_user()->habilitado)
          {
-            $medicamentos = ORM::factory('medicamento')->find_all();
+            $medicamentos = ORM::factory('Medicamento')->find_all();
 
             $view = View::factory('Medicamento/index');
             $view->medicamentos = $medicamentos;
@@ -22,14 +22,14 @@
       public function action_new() {
          if(Auth::instance()->get_user()->habilitado)
          {
-            $medicamento = ORM::factory('medicamento');
+            $medicamento = ORM::factory('Medicamento');
 
             $view = View::factory('Medicamento/form')
                ->bind('errors', $errors);
 
             if(http_request::POST == $this->request->method())
             {
-               $medicamento = ORM::factory('medicamento')->values($_POST,
+               $medicamento = ORM::factory('Medicamento')->values($_POST,
                   array('nombre_distintivo', 'nombre_generico', 'presentacion',
                         'stock_minimo', 'grupo'));
 
@@ -71,7 +71,7 @@
          if(Auth::instance()->get_user()->habilitado)
          {
             $id = $this->request->param('id');
-            $medicamento = ORM::factory('medicamento', $id);
+            $medicamento = ORM::factory('Medicamento', $id);
 
             $view = View::factory('Medicamento/form')
                ->bind('errors', $errors);
