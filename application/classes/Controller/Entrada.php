@@ -1,4 +1,4 @@
-<?php defined('SYSPATH') or die('Nor direct script access.');
+<?php defined('SYSPATH') or die('Not direct script access.');
 
 class Controller_Entrada extends Controller_Template {
    public $template = 'base';
