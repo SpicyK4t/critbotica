@@ -30,7 +30,7 @@ class Controller_Entrada extends Controller_Template {
 
          if(http_request::POST == $this->request->method())
          {
-            $entrada = ORM::factory('entrada')->values($_POST,
+            $entrada = ORM::factory('Entrada')->values($_POST,
                   array('cantidad', 'caducidad', 'lote', 'no_registro',
                         'fecha_entrada', 'observaciones'));
 
@@ -40,7 +40,7 @@ class Controller_Entrada extends Controller_Template {
             try
             {
                $entrada->save();
-               HTTP::redirect("/entrada/");
+               HTTP::redirect('/entrada/');
             }
             catch(ORM_Validation_Exception $e)
             {

@@ -10,7 +10,7 @@ class Controller_Home extends Controller_Template {
         {
             if(Auth::instance()->get_user()->habilitado)
             {
-                $this->template->menu = View::factory('Auth/barra_usuario');
+                $this->template->menu = View::factory('menu');
                 $this->template->contenido = View::factory('Home/dashboard');
             }
             else
@@ -24,7 +24,7 @@ class Controller_Home extends Controller_Template {
 
     public function action_install()
     {
-        $user = ORM::factory('User');
+        $user = ORM::factory('user');
         $user->email = 'admin@hotmail.com';
         $user->username = 'webadmin';
         $user->password = 'webadmin';
@@ -32,14 +32,19 @@ class Controller_Home extends Controller_Template {
         $user->apellido = 'Website';
         $user->save();
 
-        $role = ORM::factory('Role')->where('name', '=', 'login')->find();
-        $user->add('Roles', $role);
-        $role = ORM::factory('Role')->where('name', '=', 'admin')->find();
-        $user->add('Roles', $role);
+        $role = ORM::factory('role')->where('name', '=', 'login')->find();
+        $user->add('roles', $role);
+        $role = ORM::factory('role')->where('name', '=', 'admin')->find();
+        $user->add('roles', $role);
 
         $user->save();
 
         $this->template->menu = '';
         $this->template->contenido = 'Instalado';
     }
+
+    public function action_pruebapass() {
+      $this->template->contenido = Auth::instance()->hash_password('webadmin');
+
+   }
 }

@@ -8,7 +8,7 @@ class Controller_User extends Controller_Template {
         if(Auth::instance()->logged_in('admin') &&
            Auth::instance()->get_user()->habilitado)
         {
-            $users = ORM::factory('User')->find_all();
+            $users = ORM::factory('user')->find_all();
 
             $view = View::factory('User/index');
             $view->users = $users;
@@ -25,22 +25,22 @@ class Controller_User extends Controller_Template {
         if(Auth::instance()->logged_in('admin') &&
           Auth::instance()->get_user()->habilitado)
         {
-            $usuario = ORM::factory('User');
+            $usuario = ORM::factory('user');
 
             $view = View::factory('User/form')
                 ->bind('errors', $errors);
 
             if(http_request::POST == $this->request->method())
             {
-                $usuario = ORM::factory('User')->values(
+                $usuario = ORM::factory('user')->values(
                     $_POST, array('username', 'email', 'password', 'nombre', 'apellido'));
 
                 try
                 {
                     $usuario->save();
 
-                    $role = ORM::factory('Role')->where('name', '=', 'login')->find();
-                    $nuevo_usuario->add('Roles', $role);
+                    $role = ORM::factory('role')->where('name', '=', 'login')->find();
+                    $nuevo_usuario->add('roles', $role);
                     $nuevo_usuario->save();
 
                     HTTP::redirect('/User/');
@@ -65,7 +65,7 @@ class Controller_User extends Controller_Template {
           Auth::instance()->get_user()->habilitado)
         {
             $id = $this->request->param('id');
-            $usuario = ORM::factory('User', $id);
+            $usuario = ORM::factory('user', $id);
 
             $view = View::factory('User/form')
                 ->bind('errors', $errors);
@@ -100,7 +100,7 @@ class Controller_User extends Controller_Template {
            Auth::instance()->get_user()->habilitado)
         {
             $id = $this->request->param('id');
-            $usuario = ORM::factory('User', $id);
+            $usuario = ORM::factory('user', $id);
             $usuario->habilitado = 0;
             $usuario->save();
             HTTP::redirect('/User/');
@@ -115,7 +115,7 @@ class Controller_User extends Controller_Template {
            Auth::instance()->get_user()->habilitado)
         {
             $id = $this->request->param('id');
-            $usuario = ORM::factory('User', $id);
+            $usuario = ORM::factory('user', $id);
             $usuario->habilitado = 1;
             $usuario->save();
             HTTP::redirect('/User/');
