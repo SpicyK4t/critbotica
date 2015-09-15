@@ -13,7 +13,7 @@ class Controller_Entrada extends Controller_Template {
          $view->entradas = $entradas;
 
          $this->template->contenido = $view;
-         $this->template->menu = "";
+         $this->template->menu = View::factory('menu');
       }
       else
          HTTP::redirect('/Auth/login/');
@@ -55,7 +55,7 @@ class Controller_Entrada extends Controller_Template {
          $view->medicamentos = $medicamentos;
          $this->template->contenido = $view;
          $this->template->scripts = View::factory('Medicamento/scripts');
-         $this->template->menu = "";
+         $this->template->menu = View::factory('menu');
       }
       else
          HTTP::redirect('/Auth/login/');
@@ -97,7 +97,7 @@ class Controller_Entrada extends Controller_Template {
          $view->medicamentos = $medicamentos;
          $this->template->contenido = $view;
          $this->template->scripts = View::factory('Medicamento/scripts');
-         $this->template->menu = "";
+         $this->template->menu = View::factory('menu');
       }
       else
          HTTP::redirect('/Auth/login/');

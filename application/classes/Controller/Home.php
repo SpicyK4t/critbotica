@@ -11,6 +11,7 @@ class Controller_Home extends Controller_Template {
             if(Auth::instance()->get_user()->habilitado)
             {
                 $this->template->menu = View::factory('menu');
+                $this->template->scripts = View::factory('Medicamento/scripts');
                 $this->template->contenido = View::factory('Home/dashboard');
             }
             else

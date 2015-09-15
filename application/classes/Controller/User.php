@@ -14,7 +14,7 @@ class Controller_User extends Controller_Template {
             $view->users = $users;
 
             $this->template->contenido = $view;
-            $this->template->menu = "";
+            $this->template->menu = View::factory('menu');
         }
         else
             HTTP::redirect('/Auth/login/');
@@ -53,7 +53,7 @@ class Controller_User extends Controller_Template {
 
             $view->usuario = $usuario;
             $this->template->contenido = $view;
-            $this->template->menu = "";
+            $this->template->menu = View::factory('menu');
         }
         else
             HTTP::redirect('/Auth/login/');
@@ -88,7 +88,7 @@ class Controller_User extends Controller_Template {
 
             $view->usuario = $usuario;
             $this->template->contenido = $view;
-            $this->template->menu = "";
+            $this->template->menu = View::factory('menu');
         }
         else
             HTTP::redirect('/Auth/login/');
@@ -122,5 +122,10 @@ class Controller_User extends Controller_Template {
         }
         else
             HTTP::redirect('/Auth/login/');
+    }
+
+    public function action_misdatos()
+    {
+
     }
 }

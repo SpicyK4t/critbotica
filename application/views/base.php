@@ -32,25 +32,29 @@
 
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Habilitar uso de íconos -->
       <?php echo HTML::style('media/css/materialize.min.css'); ?>
+      <?php echo HTML::style('media/css/sticky-footer.css'); ?>
    </head>
    <body>
       <header class="purple darken-4">
-         <?php if(isset($menu)) { echo $menu; } ?>
+            <?php if(isset($menu)) { echo $menu; } ?>
       </header>
       <main>
-         <section>
+         <section class="container">
             <?php if(isset($contenido)) { echo $contenido; } ?>
          </section>
       </main>
       <aside>
       </aside>
-      <footer>
+
+      <footer class="page-footer white">
+          <div class="footer-copyright yellow accent-2">
+             <div class="container black-text"> © 2015 CRIT Guanajuato </div>
+          </div>
       </footer>
 
      <?php echo HTML::script('media/js/jquery-2.1.4.min.js');  ?>
      <?php echo HTML::script('media/js/materialize.min.js'); ?>
-     <?php if(isset($scripts))
-               echo $scripts;
-     ?>
+     <?php echo HTML::script('media/js/tooltip.js'); ?>
+     <?php if(isset($scripts)) echo $scripts; ?>
   </body>
 </html>

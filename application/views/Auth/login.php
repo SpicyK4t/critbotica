@@ -26,11 +26,11 @@
       </div>
       <div class="row">
          <div class="col s6">
-            <?php if(isset($errors) && !empty($errors)) { echo HTML::anchor('#error_modal', '!E', array('class'=>'waves-effect waves-light btn modal-trigger left')); }
+            <?php if(isset($errors) && !empty($errors)) { echo HTML::anchor('#error_modal', '!E', array('class'=>'green accent-2 waves-effect waves-light btn modal-trigger left')); }
                   else { echo '&nbsp;'; }?>
          </div>
          <div class="col s6">
-            <?php echo Form::submit('login', 'Entrar', array('class'=>'btn right')); ?>
+            <?php echo Form::submit('login', 'Entrar', array('class'=>'green accent-2 btn right')); ?>
          </div>
 
       </div>

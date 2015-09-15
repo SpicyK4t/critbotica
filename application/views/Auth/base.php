@@ -36,7 +36,7 @@
      <?php echo HTML::style('media/css/login.css'); ?>
    </head>
    <body>
-      <header class="purple darken-4"> &nbsp; </header>
+      <header class="purple darken-4"> </header>
 
       <main class="container">
          <section class="row">
@@ -55,7 +55,7 @@
       </footer>
 
       <?php echo HTML::script('media/js/jquery-2.1.4.min.js');  ?>
-      <?php echo HTML::script('media/js/materialize.min.js'); ?>      
+      <?php echo HTML::script('media/js/materialize.min.js'); ?>
       <?php echo HTML::script('media/js/modal-init.js'); ?>
    </body>
 </html>

@@ -146,14 +146,13 @@ Cookie::$salt = "CritManejodeBotica";
  * defaults for the URI.
  */
 
-
+/*
 Route::set('default', '(<controller>(/<action>(/<id>)))')
 	->defaults(array(
 		'controller' => 'home',
 		'action'     => 'index',
 	));
-
-
+*/
 /*
 Route::set('resttest', 'resttest(/<id>)(.<format>)',
     array(

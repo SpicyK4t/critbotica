@@ -13,7 +13,7 @@ class Controller_Salida extends Controller_Template {
          $view->salidas = $salidas;
 
          $this->template->contenido = $view;
-         $this->template->menu = '';
+         $this->template->menu = View::factory('menu');
       }
       else
          HTTP::redirect('/Auth/login/');
