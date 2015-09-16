@@ -1,6 +1,6 @@
 <nav>
  <div class="nav-wrapper purple darken-4">
-   <a href="#" class="brand-logo">SIB Crit Guanajuato</a>
+   <a href="#" class="brand-logo" style="padding-left: 3%;">  <?php echo HTML::image(url::base().'media/img/favicon-32x32.png') ?> SIB </a>
    <ul class="right hide-on-med-and-down">
      <li>
         <a href="#" class="dropdown-button" data-activates="reportes_dropdown"><i class="material-icons right">print</i>Reportes de Inventario</a>

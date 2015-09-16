@@ -13,7 +13,8 @@
             $view->medicamentos = $medicamentos;
 
             $this->template->contenido = $view;
-            $this->template->menu = "";
+            $this->template->menu = View::factory('menu');
+            $this->template->scripts = View::factory('table_sorter_js');
          }
          else
             HTTP::redirect('/Auth/login/');
@@ -60,7 +61,7 @@
                3=>'Grupo III', 4=>'Grupo IV', 5=>'Grupo V', 6=>'Grupo VI');
             $this->template->contenido = $view;
             $this->template->scripts = View::factory('Medicamento/scripts');
-            $this->template->menu = "";
+            $this->template->menu = View::factory('menu');
          }
          else
             HTTP::redirect('/Auth/login/');
@@ -107,7 +108,7 @@
                3=>'Grupo III', 4=>'Grupo IV', 5=>'Grupo V', 6=>'Grupo VI');
             $this->template->contenido = $view;
             $this->template->scripts = View::factory('Medicamento/scripts');
-            $this->template->menu = "";
+            $this->template->menu = View::factory('menu');
          }
          else
             HTTP::redirect('/Auth/login/');

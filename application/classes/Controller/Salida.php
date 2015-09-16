@@ -15,7 +15,7 @@ class Controller_Salida extends Controller_Template {
          $this->template->contenido = $view;
          $this->template->menu = View::factory('menu');
       }
-      else
+      elses
          HTTP::redirect('/Auth/login/');
    }
 

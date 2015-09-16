@@ -20,7 +20,7 @@
          </div>
       </div>
    <?php } ?>
-   <div class="col s12 m5">
+   <div class="col s12 m5 offset-m1">
       <div class="card-panel blue-grey lighten-4">
          <div class="row">
             <div class="col s12 m7">
@@ -58,7 +58,7 @@
          </div>
       </div>
    </div>
-   <div class="col s12 m5">
+   <div class="col s12 m5 offset-m1">
       <div class="card-panel blue-grey lighten-4">
          <div class="row">
             <div class="col s12 m4">

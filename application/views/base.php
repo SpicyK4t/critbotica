@@ -36,7 +36,9 @@
    </head>
    <body>
       <header class="purple darken-4">
+         <div>
             <?php if(isset($menu)) { echo $menu; } ?>
+         </div>
       </header>
       <main>
          <section class="container">

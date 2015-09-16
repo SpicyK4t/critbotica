@@ -13,7 +13,7 @@ class Controller_Paciente extends Controller_Template {
             $view->pacientes = $pacientes;
 
             $this->template->contenido = $view;
-            $this->template->menu = "";
+            $this->template->menu = View::factory('menu');
         }
         else
             HTTP::redirect('/Auth/login/');
@@ -44,7 +44,7 @@ class Controller_Paciente extends Controller_Template {
             }
             $view->paciente = $paciente;
             $this->template->contenido = $view;
-            $this->template->menu = "";
+            $this->template->menu = View::factory('menu');
         }
         else
             HTTP::redirect('/Auth/login/');
@@ -78,7 +78,7 @@ class Controller_Paciente extends Controller_Template {
             }
             $view->paciente = $paciente;
             $this->template->contenido = $view;
-            $this->template->menu = "";
+            $this->template->menu = View::factory('menu');
         }
         else
             HTTP::redirect('/Auth/login/');
