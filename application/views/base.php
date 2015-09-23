@@ -33,6 +33,8 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Habilitar uso de íconos -->
       <?php echo HTML::style('media/css/materialize.min.css'); ?>
       <?php echo HTML::style('media/css/sticky-footer.css'); ?>
+      <?php echo HTML::style('media/css/init.css');?>
+      <?php echo HTML::style('media/js/themes/blue/style.css'); ?>
    </head>
    <body>
       <header class="purple darken-4">

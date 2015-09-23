@@ -21,7 +21,10 @@
                     <td><?php echo $user->habilitado; ?> </td>
                     <td><?php echo $user->username; ?></td>
                     <td><?php echo $user->email; ?></td>
-                    <td> <?php echo HTML::anchor('/user/edit/'.$user->id, 'Editar'); ?> | <?php if($user->habilitado) echo HTML::anchor('/user/delete/'.$user->id, 'Deshabilitar'); else echo HTML::anchor('/user/habilitar/'.$user->id, 'habilitar'); ?></td>        
+                    <td>
+                       <?php echo HTML::anchor('/user/edit/'.$user->id, 'Editar'); ?> |
+                       <?php if($user->habilitado) echo HTML::anchor('/user/delete/'.$user->id, 'Deshabilitar'); else echo HTML::anchor('/user/habilitar/'.$user->id, 'habilitar'); ?>
+                   </td>        
                 </tr>
             <?php
                 }

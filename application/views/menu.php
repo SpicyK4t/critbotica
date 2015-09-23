@@ -2,9 +2,25 @@
  <div class="nav-wrapper purple darken-4">
    <a href="#" class="brand-logo" style="padding-left: 3%;">  <?php echo HTML::image(url::base().'media/img/favicon-32x32.png') ?> SIB </a>
    <ul class="right hide-on-med-and-down">
+      <?php if(Auth::instance()->logged_in('admin')) { ?>
+         <li>
+            <a href="#" class="dropdown-button" data-activates="usuarios_dropdown">Usuarios (Admin)</a>
+            <ul id="usuarios_dropdown" class="dropdown-content">
+               <li> <?php echo HTML::anchor('/user/new/', 'Nuevo Usuario'); ?> </li>
+               <li> <?php echo HTML::anchor('/user/', 'Lista de Usuarios'); ?></li>
+            </ul>
+         </li>
+      <?php } ?>
+     <li>
+        <a href="#" class="dropdown-button" data-activates="doctores_dropdown">Doctores</a>
+        <ul id="doctores_dropdown" class="dropdown-content">
+           <li> <?php echo HTML::anchor('/doctor/new/', 'Nuevo Doctor'); ?> </li>
+           <li> <?php echo HTML::anchor('/doctor/', 'Lista de Doctores'); ?> </li>
+        </ul>
+     </li>
      <li>
         <a href="#" class="dropdown-button" data-activates="reportes_dropdown"><i class="material-icons right">print</i>Reportes de Inventario</a>
-         <ul id="reportes_dropdown" class="dropdown-content">
+        <ul id="reportes_dropdown" class="dropdown-content">
             <li> <?php echo HTML::anchor('#', '<i class="material-icons left">description</i>Inventario I'); ?> </li>
             <li> <?php echo HTML::anchor('#', '<i class="material-icons left">description</i>Inventario II'); ?> </li>
         </ul>
