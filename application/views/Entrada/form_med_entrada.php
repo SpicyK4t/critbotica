@@ -1,18 +1,12 @@
+<h5>Nueva entrada de <?php echo $medicamento->nombre_distintivo.'('.$medicamento->nombre_generico.')'; ?> </h5>
 <?php echo Form::open(); ?>
-   <?php if(isset($entrada->id)) { echo Form::hidden('id', $entrada->id); } ?>
-
-   <div class="input-field">
-      <?php echo Form::select('medicamento', $medicamentos, $entrada->medicamento->id); ?>
-      <?php echo Form::label('medicamento', 'Medicamento'); ?>
-      <p class="error"> <?php echo Arr::get($errors, 'medicamento_id'); ?> </p>
-   </div>
-
+   <?php echo Form::hidden('medicamento_id', $entrada->medicamento_id); ?>
    <?php echo Form::label('cantidad', 'Cantidad'); ?>
-      <?php echo Form::input('cantidad', $entrada->cantidad); ?>
+      <?php echo Form::input('cantidad', $entrada->cantidad, array('type'=>'number', 'min'=>'1')); ?>
       <p class="error"> <?php echo Arr::get($errors, 'cantidad'); ?> </p>
 
-   <?php echo Form::label('caducidad', 'Caducidad(AAAA-mm)'); ?>
-      <?php echo Form::input('caducidad', $entrada->caducidad); ?>
+   <?php echo Form::label('caducidad', 'Caducidad(AAAA-mm-00)'); ?>
+      <?php echo Form::input('caducidad', $entrada->caducidad, array('type'=>'date', 'class'=>'datepicker2')); ?>
       <p class="error"> <?php echo Arr::get($errors, 'caducidad'); ?> </p>
 
    <?php echo Form::label('lote', 'Lote'); ?>
@@ -24,13 +18,13 @@
       <p class="error"> <?php echo Arr::get($errors, 'no_registro'); ?> </p>
 
    <?php echo Form::label('fecha_entrada', 'Fecha de entrada(AAAA-mm-dd)'); ?>
-      <?php echo Form::input('fecha_entrada', $entrada->fecha_entrada); ?>
+      <?php echo Form::input('fecha_entrada', $entrada->fecha_entrada, array('type'=>'date', 'class'=>'datepicker')); ?>
       <p class="error"> <?php echo Arr::get($errors, 'fecha_entrada'); ?> </p>
 
    <?php echo Form::label('observaciones', 'Observaciones'); ?>
       <?php echo Form::input('observaciones', $entrada->observaciones); ?>
       <p class="error"> <?php echo Arr::get($errors, 'observaciones'); ?> </p>
 
-   <?php echo Form::submit(NULL, 'guardar'); ?>
+   <?php echo Form::submit(NULL, 'guardar', array('class'=>'btn')); ?>
 
 <?php echo Form::close(); ?>

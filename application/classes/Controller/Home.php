@@ -12,12 +12,12 @@ class Controller_Home extends Controller_Template {
             {
                 if(http_request::POST == $this->request->method()) {
 
-                   $medicamento_id = $this->request->post('medicamento');
+                   $medicamento_id = $this->request->post('medicamento_id');
                    if($this->request->post('btn_entrada')){
                        HTTP::redirect('/entrada/registro/'.$medicamento_id);
                    }
                    else if($this->request->post('btn_salida')) {
-                       HTTP::redirect('/salida/medicacion/'.$medicamento_id);
+                       HTTP::redirect('/salida/registro/'.$medicamento_id);
                    }
                 }
 

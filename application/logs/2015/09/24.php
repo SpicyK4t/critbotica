@@ -200,3 +200,123 @@
 2015-09-24 02:22:09 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected 'HTTP' (T_STRING) ~ APPPATH/classes/Controller/Salida.php [ 19 ] in file:line
 2015-09-24 02:22:09 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
 #1 {main} in file:line
+2015-09-24 10:01:58 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected 'HTTP' (T_STRING) ~ APPPATH/classes/Controller/Salida.php [ 19 ] in file:line
+2015-09-24 10:01:58 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 13:02:10 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$entrada' (T_VARIABLE) ~ APPPATH/classes/Controller/Entrada.php [ 110 ] in file:line
+2015-09-24 13:02:10 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 13:02:28 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$entrada' (T_VARIABLE) ~ APPPATH/classes/Controller/Entrada.php [ 110 ] in file:line
+2015-09-24 13:02:28 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 13:02:29 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$entrada' (T_VARIABLE) ~ APPPATH/classes/Controller/Entrada.php [ 110 ] in file:line
+2015-09-24 13:02:29 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 13:02:29 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$entrada' (T_VARIABLE) ~ APPPATH/classes/Controller/Entrada.php [ 110 ] in file:line
+2015-09-24 13:02:29 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 13:03:14 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: errors ~ APPPATH/views/Entrada/form_med_entrada.php [ 6 ] in /home/guillermo/public_html/critbotica/application/views/Entrada/form_med_entrada.php:6
+2015-09-24 13:03:14 --- DEBUG: #0 /home/guillermo/public_html/critbotica/application/views/Entrada/form_med_entrada.php(6): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/guillermo...', 6, Array)
+#1 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(62): include('/home/guillermo...')
+#2 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(359): Kohana_View::capture('/home/guillermo...', Array)
+#3 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(236): Kohana_View->render()
+#4 /home/guillermo/public_html/critbotica/application/views/base.php(47): Kohana_View->__toString()
+#5 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(62): include('/home/guillermo...')
+#6 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(359): Kohana_View::capture('/home/guillermo...', Array)
+#7 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Entrada))
+#11 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#13 /home/guillermo/public_html/critbotica/index.php(118): Kohana_Request->execute()
+#14 {main} in /home/guillermo/public_html/critbotica/application/views/Entrada/form_med_entrada.php:6
+2015-09-24 13:06:14 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: medicamento ~ APPPATH/views/Entrada/form_med_entrada.php [ 2 ] in /home/guillermo/public_html/critbotica/application/views/Entrada/form_med_entrada.php:2
+2015-09-24 13:06:14 --- DEBUG: #0 /home/guillermo/public_html/critbotica/application/views/Entrada/form_med_entrada.php(2): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/guillermo...', 2, Array)
+#1 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(62): include('/home/guillermo...')
+#2 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(359): Kohana_View::capture('/home/guillermo...', Array)
+#3 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(236): Kohana_View->render()
+#4 /home/guillermo/public_html/critbotica/application/views/base.php(47): Kohana_View->__toString()
+#5 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(62): include('/home/guillermo...')
+#6 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(359): Kohana_View::capture('/home/guillermo...', Array)
+#7 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Entrada))
+#11 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#13 /home/guillermo/public_html/critbotica/index.php(118): Kohana_Request->execute()
+#14 {main} in /home/guillermo/public_html/critbotica/application/views/Entrada/form_med_entrada.php:2
+2015-09-24 13:32:30 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '=>' (T_DOUBLE_ARROW) ~ APPPATH/views/Entrada/form_med_entrada.php [ 9 ] in file:line
+2015-09-24 13:32:30 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 13:32:31 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '=>' (T_DOUBLE_ARROW) ~ APPPATH/views/Entrada/form_med_entrada.php [ 9 ] in file:line
+2015-09-24 13:32:31 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 13:32:41 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '=>' (T_DOUBLE_ARROW) ~ APPPATH/views/Entrada/form_med_entrada.php [ 9 ] in file:line
+2015-09-24 13:32:41 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 13:40:12 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '}' ~ APPPATH/classes/Controller/Entrada.php [ 119 ] in file:line
+2015-09-24 13:40:12 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 13:46:32 --- EMERGENCY: ErrorException [ 8 ]: Undefined index: nombre_distintivoexistencia ~ MODPATH/database/classes/Kohana/Database/Result.php [ 164 ] in /home/guillermo/public_html/critbotica/modules/database/classes/Kohana/Database/Result.php:164
+2015-09-24 13:46:32 --- DEBUG: #0 /home/guillermo/public_html/critbotica/modules/database/classes/Kohana/Database/Result.php(164): Kohana_Core::error_handler(8, 'Undefined index...', '/home/guillermo...', 164, Array)
+#1 /home/guillermo/public_html/critbotica/application/classes/Controller/Home.php(27): Kohana_Database_Result->as_array('id', 'nombre_distinti...')
+#2 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller.php(84): Controller_Home->action_index()
+#3 [internal function]: Kohana_Controller->execute()
+#4 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Home))
+#5 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#7 /home/guillermo/public_html/critbotica/index.php(118): Kohana_Request->execute()
+#8 {main} in /home/guillermo/public_html/critbotica/modules/database/classes/Kohana/Database/Result.php:164
+2015-09-24 13:46:34 --- EMERGENCY: ErrorException [ 8 ]: Undefined index: nombre_distintivoexistencia ~ MODPATH/database/classes/Kohana/Database/Result.php [ 164 ] in /home/guillermo/public_html/critbotica/modules/database/classes/Kohana/Database/Result.php:164
+2015-09-24 13:46:34 --- DEBUG: #0 /home/guillermo/public_html/critbotica/modules/database/classes/Kohana/Database/Result.php(164): Kohana_Core::error_handler(8, 'Undefined index...', '/home/guillermo...', 164, Array)
+#1 /home/guillermo/public_html/critbotica/application/classes/Controller/Home.php(27): Kohana_Database_Result->as_array('id', 'nombre_distinti...')
+#2 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller.php(84): Controller_Home->action_index()
+#3 [internal function]: Kohana_Controller->execute()
+#4 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Home))
+#5 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#7 /home/guillermo/public_html/critbotica/index.php(118): Kohana_Request->execute()
+#8 {main} in /home/guillermo/public_html/critbotica/modules/database/classes/Kohana/Database/Result.php:164
+2015-09-24 13:51:52 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected ';', expecting ')' ~ APPPATH/classes/Controller/Home.php [ 30 ] in file:line
+2015-09-24 13:51:52 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 13:52:10 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: medicamenos ~ APPPATH/classes/Controller/Home.php [ 29 ] in /home/guillermo/public_html/critbotica/application/classes/Controller/Home.php:29
+2015-09-24 13:52:10 --- DEBUG: #0 /home/guillermo/public_html/critbotica/application/classes/Controller/Home.php(29): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/guillermo...', 29, Array)
+#1 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller.php(84): Controller_Home->action_index()
+#2 [internal function]: Kohana_Controller->execute()
+#3 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Home))
+#4 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#6 /home/guillermo/public_html/critbotica/index.php(118): Kohana_Request->execute()
+#7 {main} in /home/guillermo/public_html/critbotica/application/classes/Controller/Home.php:29
+2015-09-24 13:52:20 --- EMERGENCY: ErrorException [ 8 ]: Trying to get property of non-object ~ APPPATH/classes/Controller/Home.php [ 30 ] in /home/guillermo/public_html/critbotica/application/classes/Controller/Home.php:30
+2015-09-24 13:52:20 --- DEBUG: #0 /home/guillermo/public_html/critbotica/application/classes/Controller/Home.php(30): Kohana_Core::error_handler(8, 'Trying to get p...', '/home/guillermo...', 30, Array)
+#1 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller.php(84): Controller_Home->action_index()
+#2 [internal function]: Kohana_Controller->execute()
+#3 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Home))
+#4 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#6 /home/guillermo/public_html/critbotica/index.php(118): Kohana_Request->execute()
+#7 {main} in /home/guillermo/public_html/critbotica/application/classes/Controller/Home.php:30
+2015-09-24 13:56:23 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected 'HTTP' (T_STRING) ~ APPPATH/classes/Controller/Salida.php [ 19 ] in file:line
+2015-09-24 13:56:23 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 14:09:26 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected 'HTTP' (T_STRING) ~ APPPATH/classes/Controller/Salida.php [ 19 ] in file:line
+2015-09-24 14:09:26 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 14:09:29 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected 'HTTP' (T_STRING) ~ APPPATH/classes/Controller/Salida.php [ 19 ] in file:line
+2015-09-24 14:09:29 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 14:09:38 --- EMERGENCY: View_Exception [ 0 ]: The requested view Salida/index could not be found ~ SYSPATH/classes/Kohana/View.php [ 265 ] in /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php:145
+2015-09-24 14:09:38 --- DEBUG: #0 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(145): Kohana_View->set_filename('Salida/index')
+#1 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(30): Kohana_View->__construct('Salida/index', NULL)
+#2 /home/guillermo/public_html/critbotica/application/classes/Controller/Salida.php(12): Kohana_View::factory('Salida/index')
+#3 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller.php(84): Controller_Salida->action_index()
+#4 [internal function]: Kohana_Controller->execute()
+#5 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Salida))
+#6 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#8 /home/guillermo/public_html/critbotica/index.php(118): Kohana_Request->execute()
+#9 {main} in /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php:145

@@ -7,7 +7,13 @@ class Controller_Entrada extends Controller_Template {
    {
       if(Auth::instance()->get_user()->habilitado)
       {
-         $entradas = ORM::factory('Entrada')->find_all();
+         $id = $this->request->param('id');
+         if($id) {
+             $entradas = ORM::factory('Entrada')->where('medicamento_id', '=', $id)->find_all();
+         }
+         else {
+             $entradas = ORM::factory('Entrada')->find_all();
+         }
 
          $view = View::factory('Entrada/index');
          $view->entradas = $entradas;
@@ -103,9 +109,42 @@ class Controller_Entrada extends Controller_Template {
          HTTP::redirect('/Auth/login/');
    }
 
-   public function action_registrar()
+   public function action_registro()
    {
-       $id_medicamento = $this->request->param('id');
-       
+       if(Auth::instance()->get_user()->habilitado) {
+           $entrada = ORM::factory('Entrada');
+           if(http_request::POST == $this->request->method()) {
+               $entrada->values($_POST, array('medicamento_id', 'cantidad', 'caducidad',
+                    'lote', 'no_registro', 'fecha_entrada', 'observaciones'));
+               $entrada->user = Auth::instance()->get_user();
+
+               try {
+                   $entrada->save();
+                   HTTP::redirect('/');
+               }
+               catch(ORM_Validation_Exception $e) {
+                   $errors = $e->errors('Models');
+               }
+           }
+           else {
+               $medicamento_id = $this->request->param('id');
+               $medicamento = ORM::factory('Medicamento', $medicamento_id);
+               $entrada->medicamento_id = $medicamento_id;
+               $entrada->fecha_entrada = date('Y-m-d');
+           }
+
+
+
+           $vista = View::factory('Entrada/form_med_entrada')->bind('errors', $errors);
+           $vista->entrada = $entrada;
+           $vista->medicamento = $medicamento;
+
+           $this->template->contenido = $vista;
+           $this->template->menu = View::factory('menu');
+           $this->template->scripts = View::factory('Entrada/scripts');
+       }
+       else {
+           HTTP::redirect('/Auth/login/');
+       }
    }
 }

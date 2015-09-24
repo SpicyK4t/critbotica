@@ -15,7 +15,7 @@ class Controller_Salida extends Controller_Template {
          $this->template->contenido = $view;
          $this->template->menu = View::factory('menu');
       }
-      elses
+      else
          HTTP::redirect('/Auth/login/');
    }
 
@@ -59,4 +59,12 @@ class Controller_Salida extends Controller_Template {
          HTTP::redirect('/Auth/login/');
    }
 
+   public function action_registro() {
+       if(Auth::instance()->get_user()->habilitado) {
+           $salida = ORM::factory('Salida');
+       }
+       else {
+           HTTP::redirect('/Auth/login/');
+       }
+   }
 }

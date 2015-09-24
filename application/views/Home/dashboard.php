@@ -5,7 +5,7 @@
           <?php echo Form::open(); ?>
           <div class="row">
             <div class="input-field col s12">
-              <?php echo Form::select('medicamento', $medicamentos); ?>
+              <?php echo Form::select('medicamento_id', $medicamentos); ?>
             </div>
           </div>
           <div class="row">
