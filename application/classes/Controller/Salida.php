@@ -59,13 +59,4 @@ class Controller_Salida extends Controller_Template {
          HTTP::redirect('/Auth/login/');
    }
 
-   public function action_edit()
-   {
-      if(Auth::instance()->get_user()->habilitado)
-      {
-
-      }
-      else
-         HTTP::redirect('/Auth/login/');
-   }
 }

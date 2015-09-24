@@ -10,9 +10,27 @@ class Controller_Home extends Controller_Template {
         {
             if(Auth::instance()->get_user()->habilitado)
             {
+                if(http_request::POST == $this->request->method()) {
+
+                   $medicamento_id = $this->request->post('medicamento');
+                   if($this->request->post('btn_entrada')){
+                       HTTP::redirect('/entrada/registro/'.$medicamento_id);
+                   }
+                   else if($this->request->post('btn_salida')) {
+                       HTTP::redirect('/salida/medicacion/'.$medicamento_id);
+                   }
+                }
+
+                $medicamentos = DB::select()
+                                  ->from('medicamentosexistencia')
+                                  ->execute()
+                                  ->as_array('id', 'nombre_distintivo');
+
+                $dashboard = View::factory('Home/dashboard');
+                $dashboard->medicamentos = $medicamentos;
                 $this->template->menu = View::factory('menu');
                 $this->template->scripts = View::factory('Medicamento/scripts');
-                $this->template->contenido = View::factory('Home/dashboard');
+                $this->template->contenido = $dashboard;
             }
             else
             {

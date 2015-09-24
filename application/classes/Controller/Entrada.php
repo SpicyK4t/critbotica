@@ -102,4 +102,10 @@ class Controller_Entrada extends Controller_Template {
       else
          HTTP::redirect('/Auth/login/');
    }
+
+   public function action_registrar()
+   {
+       $id_medicamento = $this->request->param('id');
+       
+   }
 }

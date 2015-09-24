@@ -12,6 +12,20 @@
          </li>
       <?php } ?>
      <li>
+       <a href="#" class="dropdown-button" data-activates="medicamentos_dropdown">Medicamentos</a>
+       <ul id="medicamentos_dropdown" class="dropdown-content">
+          <li> <?php echo HTML::anchor('/medicamento/new/', 'Nuevo Medicamento'); ?> </li>
+          <li> <?php echo HTML::anchor('/medicamento/', 'Lista de Medicamentos'); ?> </li>
+       </ul>
+     </li>
+     <li>
+       <a href="#" class="dropdown-button" data-activates="pacientes_dropdown">Pacientes</a>
+       <ul id="pacientes_dropdown" class="dropdown-content">
+         <li> <?php echo HTML::anchor('/paciente/new/', 'Nuevo Paciente'); ?> </li>
+         <li> <?php echo HTML::anchor('/paciente/', 'Lista de Pacientes'); ?> </li>
+       </ul>
+     </li>
+     <li>
         <a href="#" class="dropdown-button" data-activates="doctores_dropdown">Doctores</a>
         <ul id="doctores_dropdown" class="dropdown-content">
            <li> <?php echo HTML::anchor('/doctor/new/', 'Nuevo Doctor'); ?> </li>
