@@ -11,11 +11,11 @@ class Controller_Entrada extends Controller_Template {
 
          $id = $this->request->param('id');
          if($id) {
-             $entradas = ORM::factory('Entrada')->where('medicamento_id', '=', $id)->find_all();
+             $entradas = ORM::factory('Entrada')->where('medicamento_id', '=', $id)->order_by('caducidad', 'ASC')->find_all();
              $view->medicamento = ORM::factory('Medicamento', $id);
          }
          else {
-             $entradas = ORM::factory('Entrada')->find_all();
+             $entradas = ORM::factory('Entrada')->order_by('caducidad', 'ASC')->find_all();
          }
 
          $view->entradas = $entradas;

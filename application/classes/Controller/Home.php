@@ -28,6 +28,12 @@ class Controller_Home extends Controller_Template {
 
                 $dashboard = View::factory('Home/dashboard');
                 $dashboard->medicamentos = $medicamentos;
+                $dashboard->medicamentos_seacaban = DB::select()
+                    ->from('stockminimo_alcanzado')
+                    ->execute()->as_array();
+                $dashboard->caducos = DB::select()
+                    ->from('por_caducar')
+                    ->execute()->as_array();
                 $this->template->menu = View::factory('menu');
                 $this->template->scripts = View::factory('Medicamento/scripts');
                 $this->template->contenido = $dashboard;

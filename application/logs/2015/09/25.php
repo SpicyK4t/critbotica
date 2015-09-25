@@ -87,3 +87,27 @@
 2015-09-25 01:54:22 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '''' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' ~ APPPATH/views/Salida/index.php [ 11 ] in file:line
 2015-09-25 01:54:22 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
 #1 {main} in file:line
+2015-09-25 02:49:44 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined method Form::begin() ~ APPPATH/views/Medicamento/index.php [ 4 ] in file:line
+2015-09-25 02:49:44 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-25 02:50:29 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined method Form::begin() ~ APPPATH/views/Medicamento/index.php [ 4 ] in file:line
+2015-09-25 02:50:29 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-25 02:50:44 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined method Form::begin() ~ APPPATH/views/Medicamento/index.php [ 4 ] in file:line
+2015-09-25 02:50:44 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-25 02:50:45 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined method Form::begin() ~ APPPATH/views/Medicamento/index.php [ 4 ] in file:line
+2015-09-25 02:50:45 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-25 02:51:04 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined method Form::end() ~ APPPATH/views/Medicamento/index.php [ 7 ] in file:line
+2015-09-25 02:51:04 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-25 02:55:36 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '->' (T_OBJECT_OPERATOR) ~ APPPATH/classes/Controller/Medicamento.php [ 15 ] in file:line
+2015-09-25 02:55:36 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-25 02:55:40 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '->' (T_OBJECT_OPERATOR) ~ APPPATH/classes/Controller/Medicamento.php [ 15 ] in file:line
+2015-09-25 02:55:40 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-25 02:55:41 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '->' (T_OBJECT_OPERATOR) ~ APPPATH/classes/Controller/Medicamento.php [ 15 ] in file:line
+2015-09-25 02:55:41 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line

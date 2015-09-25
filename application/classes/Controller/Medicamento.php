@@ -7,7 +7,16 @@
       {
          if(Auth::instance()->get_user()->habilitado)
          {
-            $medicamentos = ORM::factory('Medicamento')->find_all();
+            if(http_request::POST == $this->request->method())
+            {
+                $nombre = $this->request->post('busqueda');
+                $medicamentos = ORM::factory('Medicamento')
+                    ->where('nombre_distintivo', 'LIKE', '%'.$nombre.'%')
+                    ->find_all();
+            }
+            else {
+                $medicamentos = ORM::factory('Medicamento')->find_all();
+            }
 
             $view = View::factory('Medicamento/index');
             $view->medicamentos = $medicamentos;
