@@ -1,11 +1,10 @@
-<div>   
+<div>
    <h4>Medicamentos</h4> <?php echo HTML::anchor('/medicamento/new', 'Nuevo Medicamento', array('class'=>'btn')); ?>
    <table id="tabla" class="striped tablesorter">
       <thead>
          <tr>
             <th>&nbsp;</th>
-            <th valign="center">Nombre Disted links (shell scripts).
-If this doeintivo</th>
+            <th valign="center">Nombre distintivo</th>
             <th valign="center">Nombre gen&eacute;rico </th>
             <th valign="center">Grupo</th>
             <th>&nbsp;</th>
@@ -23,6 +22,8 @@ If this doeintivo</th>
                   <?php echo HTML::anchor('/medicamento/edit/'.$medicamento->id, '<i class="material-icons">info_outline</i>', array('class'=>'btn green accent-2 waves-effect waves-light black-text')); ?>
                   <?php echo HTMl::anchor('/entrada/registrar/'.$medicamento->id, '<i class="material-icons">thumb_up</i>', array('class'=>'btn green accent-2 waves-effect waves-light black-text')); ?>
                   <?php echo HTML::anchor('/salida/registrar/'.$medicamento->id, '<i class="material-icons">thumb_down</i>', array('class'=>'btn green accent-2 waves-effect waves-light black-text')); ?>
+                  <?php echo HTML::anchor('/entrada/index/'.$medicamento->id, '<i class="material-icons">trending_up</i>', array('class'=>'btn green accent-2 waves-effect waves-light black-text')); ?>
+                  <?php echo HTML::anchor('/salida/index/'.$medicamento->id, '<i class="material-icons">trending_down</i>', array('class'=>'btn green accent-2 waves-effect waves-light black-text')); ?>
                </td>
             </tr>
          <?php }?>

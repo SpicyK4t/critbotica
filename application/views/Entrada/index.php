@@ -1,7 +1,14 @@
 <div class="">
-   <?php echo HTML::anchor('/Entrada/new', 'Nueva entrada de medicamento'); ?>
+    <?php if(isset($medicamento)) { ?>
+    <h4> <?php echo $medicamento->nombre_distintivo; ?> </h4>
+    <?php echo HTML::anchor('/Entrada/registro/'.$medicamento->id,
+                'Nueva entrada', array('class'=>'btn')); ?>
+    <?php }
+    else { ?>
+        <?php echo HTML::anchor('/Entrada/new/',
+                    'Nueva entrada de medicamento', array('class'=>'btn')); ?>
+    <?php } ?>
 </div>
-
 <div class="">
    <table>
       <thead>

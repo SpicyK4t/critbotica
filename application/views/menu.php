@@ -32,13 +32,13 @@
            <li> <?php echo HTML::anchor('/doctor/', 'Lista de Doctores'); ?> </li>
         </ul>
      </li>
-     <li>
+     <!-- <li>
         <a href="#" class="dropdown-button" data-activates="reportes_dropdown"><i class="material-icons right">print</i>Reportes de Inventario</a>
         <ul id="reportes_dropdown" class="dropdown-content">
             <li> <?php echo HTML::anchor('#', '<i class="material-icons left">description</i>Inventario I'); ?> </li>
             <li> <?php echo HTML::anchor('#', '<i class="material-icons left">description</i>Inventario II'); ?> </li>
         </ul>
-     </li>
+    </li> -->
      <li> <?php echo HTML::anchor('/', '<i class="material-icons">dashboard</i>'); ?> </li>
      <li>
         <a href="#" class="dropdown-button" data-activates="login_dropdown"><i class="material-icons right">more_vert</i>Bienvenid@, <?php echo Auth::instance()->get_user()->username; ?></a>

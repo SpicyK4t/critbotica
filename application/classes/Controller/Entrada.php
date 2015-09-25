@@ -7,15 +7,17 @@ class Controller_Entrada extends Controller_Template {
    {
       if(Auth::instance()->get_user()->habilitado)
       {
+         $view = View::factory('Entrada/index');
+
          $id = $this->request->param('id');
          if($id) {
              $entradas = ORM::factory('Entrada')->where('medicamento_id', '=', $id)->find_all();
+             $view->medicamento = ORM::factory('Medicamento', $id);
          }
          else {
              $entradas = ORM::factory('Entrada')->find_all();
          }
 
-         $view = View::factory('Entrada/index');
          $view->entradas = $entradas;
 
          $this->template->contenido = $view;
@@ -114,8 +116,8 @@ class Controller_Entrada extends Controller_Template {
        if(Auth::instance()->get_user()->habilitado) {
            $entrada = ORM::factory('Entrada');
            if(http_request::POST == $this->request->method()) {
-               $entrada->values($_POST, array('medicamento_id', 'cantidad', 'caducidad',
-                    'lote', 'no_registro', 'fecha_entrada', 'observaciones'));
+               $entrada->values($this->request->post(), array('medicamento_id', 'cantidad',
+                      'caducidad', 'lote', 'no_registro', 'fecha_entrada', 'observaciones'));
                $entrada->user = Auth::instance()->get_user();
 
                try {
@@ -132,8 +134,6 @@ class Controller_Entrada extends Controller_Template {
                $entrada->medicamento_id = $medicamento_id;
                $entrada->fecha_entrada = date('Y-m-d');
            }
-
-
 
            $vista = View::factory('Entrada/form_med_entrada')->bind('errors', $errors);
            $vista->entrada = $entrada;

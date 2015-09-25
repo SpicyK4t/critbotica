@@ -320,3 +320,162 @@
 #7 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
 #8 /home/guillermo/public_html/critbotica/index.php(118): Kohana_Request->execute()
 #9 {main} in /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php:145
+2015-09-24 15:05:15 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined method Form::end() ~ APPPATH/views/Salida/form_med_salida.php [ 4 ] in file:line
+2015-09-24 15:05:15 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 15:06:00 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined method Form::end() ~ APPPATH/views/Salida/form_med_salida.php [ 4 ] in file:line
+2015-09-24 15:06:00 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 15:08:20 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined method Form::end() ~ APPPATH/views/Salida/form_med_salida.php [ 4 ] in file:line
+2015-09-24 15:08:20 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 15:09:05 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined method Form::end() ~ APPPATH/views/Salida/form_med_salida.php [ 4 ] in file:line
+2015-09-24 15:09:05 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 15:09:51 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined method Form::end() ~ APPPATH/views/Salida/form_med_salida.php [ 4 ] in file:line
+2015-09-24 15:09:51 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 15:10:36 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined method Form::end() ~ APPPATH/views/Salida/form_med_salida.php [ 4 ] in file:line
+2015-09-24 15:10:36 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 15:11:21 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined method Form::end() ~ APPPATH/views/Salida/form_med_salida.php [ 4 ] in file:line
+2015-09-24 15:11:21 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 15:12:07 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined method Form::end() ~ APPPATH/views/Salida/form_med_salida.php [ 4 ] in file:line
+2015-09-24 15:12:07 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 16:16:40 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined method Form::end() ~ APPPATH/views/Salida/form_med_salida.php [ 4 ] in file:line
+2015-09-24 16:16:40 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 16:20:27 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: salida ~ APPPATH/views/Salida/form_med_salida.php [ 5 ] in /home/guillermo/public_html/critbotica/application/views/Salida/form_med_salida.php:5
+2015-09-24 16:20:27 --- DEBUG: #0 /home/guillermo/public_html/critbotica/application/views/Salida/form_med_salida.php(5): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/guillermo...', 5, Array)
+#1 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(62): include('/home/guillermo...')
+#2 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(359): Kohana_View::capture('/home/guillermo...', Array)
+#3 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(236): Kohana_View->render()
+#4 /home/guillermo/public_html/critbotica/application/views/base.php(47): Kohana_View->__toString()
+#5 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(62): include('/home/guillermo...')
+#6 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(359): Kohana_View::capture('/home/guillermo...', Array)
+#7 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Salida))
+#11 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#13 /home/guillermo/public_html/critbotica/index.php(118): Kohana_Request->execute()
+#14 {main} in /home/guillermo/public_html/critbotica/application/views/Salida/form_med_salida.php:5
+2015-09-24 16:21:13 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: salida ~ APPPATH/views/Salida/form_med_salida.php [ 5 ] in /home/guillermo/public_html/critbotica/application/views/Salida/form_med_salida.php:5
+2015-09-24 16:21:13 --- DEBUG: #0 /home/guillermo/public_html/critbotica/application/views/Salida/form_med_salida.php(5): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/guillermo...', 5, Array)
+#1 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(62): include('/home/guillermo...')
+#2 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(359): Kohana_View::capture('/home/guillermo...', Array)
+#3 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(236): Kohana_View->render()
+#4 /home/guillermo/public_html/critbotica/application/views/base.php(47): Kohana_View->__toString()
+#5 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(62): include('/home/guillermo...')
+#6 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(359): Kohana_View::capture('/home/guillermo...', Array)
+#7 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Salida))
+#11 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#13 /home/guillermo/public_html/critbotica/index.php(118): Kohana_Request->execute()
+#14 {main} in /home/guillermo/public_html/critbotica/application/views/Salida/form_med_salida.php:5
+2015-09-24 16:21:58 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: salida ~ APPPATH/views/Salida/form_med_salida.php [ 5 ] in /home/guillermo/public_html/critbotica/application/views/Salida/form_med_salida.php:5
+2015-09-24 16:21:58 --- DEBUG: #0 /home/guillermo/public_html/critbotica/application/views/Salida/form_med_salida.php(5): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/guillermo...', 5, Array)
+#1 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(62): include('/home/guillermo...')
+#2 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(359): Kohana_View::capture('/home/guillermo...', Array)
+#3 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(236): Kohana_View->render()
+#4 /home/guillermo/public_html/critbotica/application/views/base.php(47): Kohana_View->__toString()
+#5 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(62): include('/home/guillermo...')
+#6 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(359): Kohana_View::capture('/home/guillermo...', Array)
+#7 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Salida))
+#11 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#13 /home/guillermo/public_html/critbotica/index.php(118): Kohana_Request->execute()
+#14 {main} in /home/guillermo/public_html/critbotica/application/views/Salida/form_med_salida.php:5
+2015-09-24 16:22:32 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: salida ~ APPPATH/views/Salida/form_med_salida.php [ 5 ] in /home/guillermo/public_html/critbotica/application/views/Salida/form_med_salida.php:5
+2015-09-24 16:22:32 --- DEBUG: #0 /home/guillermo/public_html/critbotica/application/views/Salida/form_med_salida.php(5): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/guillermo...', 5, Array)
+#1 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(62): include('/home/guillermo...')
+#2 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(359): Kohana_View::capture('/home/guillermo...', Array)
+#3 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(236): Kohana_View->render()
+#4 /home/guillermo/public_html/critbotica/application/views/base.php(47): Kohana_View->__toString()
+#5 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(62): include('/home/guillermo...')
+#6 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(359): Kohana_View::capture('/home/guillermo...', Array)
+#7 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Salida))
+#11 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#13 /home/guillermo/public_html/critbotica/index.php(118): Kohana_Request->execute()
+#14 {main} in /home/guillermo/public_html/critbotica/application/views/Salida/form_med_salida.php:5
+2015-09-24 19:16:43 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: medicamento ~ APPPATH/classes/Controller/Entrada.php [ 138 ] in /home/guillermo/public_html/critbotica/application/classes/Controller/Entrada.php:138
+2015-09-24 19:16:43 --- DEBUG: #0 /home/guillermo/public_html/critbotica/application/classes/Controller/Entrada.php(138): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/guillermo...', 138, Array)
+#1 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller.php(84): Controller_Entrada->action_registro()
+#2 [internal function]: Kohana_Controller->execute()
+#3 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Entrada))
+#4 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#6 /home/guillermo/public_html/critbotica/index.php(118): Kohana_Request->execute()
+#7 {main} in /home/guillermo/public_html/critbotica/application/classes/Controller/Entrada.php:138
+2015-09-24 21:13:39 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected ')' ~ APPPATH/views/Salida/form_med_salida.php [ 6 ] in file:line
+2015-09-24 21:13:39 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 21:16:12 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting '(' ~ APPPATH/views/Salida/form_med_salida.php [ 7 ] in file:line
+2015-09-24 21:16:12 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 21:16:58 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting '(' ~ APPPATH/views/Salida/form_med_salida.php [ 7 ] in file:line
+2015-09-24 21:16:58 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 21:17:21 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting '(' ~ APPPATH/views/Salida/form_med_salida.php [ 7 ] in file:line
+2015-09-24 21:17:21 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 21:17:22 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting '(' ~ APPPATH/views/Salida/form_med_salida.php [ 7 ] in file:line
+2015-09-24 21:17:22 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 21:18:07 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: errors ~ APPPATH/views/Salida/form_med_salida.php [ 7 ] in /home/guillermo/public_html/critbotica/application/views/Salida/form_med_salida.php:7
+2015-09-24 21:18:07 --- DEBUG: #0 /home/guillermo/public_html/critbotica/application/views/Salida/form_med_salida.php(7): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/guillermo...', 7, Array)
+#1 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(62): include('/home/guillermo...')
+#2 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(359): Kohana_View::capture('/home/guillermo...', Array)
+#3 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(236): Kohana_View->render()
+#4 /home/guillermo/public_html/critbotica/application/views/base.php(47): Kohana_View->__toString()
+#5 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(62): include('/home/guillermo...')
+#6 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(359): Kohana_View::capture('/home/guillermo...', Array)
+#7 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Salida))
+#11 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#13 /home/guillermo/public_html/critbotica/index.php(118): Kohana_Request->execute()
+#14 {main} in /home/guillermo/public_html/critbotica/application/views/Salida/form_med_salida.php:7
+2015-09-24 21:18:09 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: errors ~ APPPATH/views/Salida/form_med_salida.php [ 7 ] in /home/guillermo/public_html/critbotica/application/views/Salida/form_med_salida.php:7
+2015-09-24 21:18:09 --- DEBUG: #0 /home/guillermo/public_html/critbotica/application/views/Salida/form_med_salida.php(7): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/guillermo...', 7, Array)
+#1 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(62): include('/home/guillermo...')
+#2 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(359): Kohana_View::capture('/home/guillermo...', Array)
+#3 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(236): Kohana_View->render()
+#4 /home/guillermo/public_html/critbotica/application/views/base.php(47): Kohana_View->__toString()
+#5 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(62): include('/home/guillermo...')
+#6 /home/guillermo/public_html/critbotica/system/classes/Kohana/View.php(359): Kohana_View::capture('/home/guillermo...', Array)
+#7 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Salida))
+#11 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#13 /home/guillermo/public_html/critbotica/index.php(118): Kohana_Request->execute()
+#14 {main} in /home/guillermo/public_html/critbotica/application/views/Salida/form_med_salida.php:7
+2015-09-24 21:18:50 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined method Model_Salida::bind() ~ APPPATH/classes/Controller/Salida.php [ 64 ] in file:line
+2015-09-24 21:18:50 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-09-24 21:23:12 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: medicamento ~ APPPATH/classes/Controller/Salida.php [ 75 ] in /home/guillermo/public_html/critbotica/application/classes/Controller/Salida.php:75
+2015-09-24 21:23:12 --- DEBUG: #0 /home/guillermo/public_html/critbotica/application/classes/Controller/Salida.php(75): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/guillermo...', 75, Array)
+#1 /home/guillermo/public_html/critbotica/system/classes/Kohana/Controller.php(84): Controller_Salida->action_registro()
+#2 [internal function]: Kohana_Controller->execute()
+#3 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Salida))
+#4 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 /home/guillermo/public_html/critbotica/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#6 /home/guillermo/public_html/critbotica/index.php(118): Kohana_Request->execute()
+#7 {main} in /home/guillermo/public_html/critbotica/application/classes/Controller/Salida.php:75
